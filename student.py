@@ -4,11 +4,13 @@ class Student:
         self.name = name
         self.height = height
         self.weight = weight
-    
+
+    # public method
     def bmi(self):
         return self.weight / (self.height / 100.0) ** 2
 
-    def is_fat(self):
+    # private method
+    def __is_fat(self):
         if self.bmi() >= 35:
             return True
         else:
