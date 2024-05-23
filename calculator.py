@@ -14,12 +14,13 @@ class Student:
         else:
             return False
 
-students = [
+if __name__ == '__main__':
+    students = [
         Student('Bill', 169, 100),        
         Student('Brian', 164, 56),
         Student('Eagle', 173, 20)
-]
+    ]
 
-for student in students:
-    if student.is_fat():
-        print(student.name)
+    for student in students:
+        if student.is_fat():
+            print(student.name)
